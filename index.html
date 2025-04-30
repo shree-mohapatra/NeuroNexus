@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="form-container">
+    <h2>Internship Application Form</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" name="fullname" required>
+
+      <label for="phone">Contact Number</label>
+      <input type="tel" id="phone" placeholder="Enter your contact number" name="phone" required>
+
+      <label for="adress">Adress</label>
+      <textarea name="adress" id="address" required></textarea>
+
+      <label for="company">Company</label>
+      <input type="text" placeholder="Enter the company name" name="company" id="company" required>
+
+      <label for="email">Email Adress</label>
+      <input type="text" name="email" placeholder="enter your email" id="email" required>
+
+      <label for="department">Department</label>
+      <select name="department" id="department" required>
+        <option value="">Select one</option>
+        <option value="HR">HR</option>
+        <option value="Sales">Sales</option>
+        <option value="Development">Development</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Others">Others</option>
+      </select>
+
+      <label>Gender</label>
+      <div class="radio-btns">
+        <label><input type="radio" name="gender" value="Male" required>Male</label>
+        <label><input type="radio" name="gender" value="Female" required>Female</label>
+        <label><input type="radio" name="gender" value="Prefer not to say" required>Prefer not to say</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+   </div>
+</body>
+</html>
